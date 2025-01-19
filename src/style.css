@@ -1,0 +1,12 @@
+body {
+    background-image: url('../assets/images/3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .absolute-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }

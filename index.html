@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صــلوات یـار آئـیـن</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/fonts.css">
+  <link rel="shortcut icon" href="./assets/images/icon.jpg" type="image/jpg">
+</head>
+<body class=" font-sans min-h-screen flex items-center justify-center">
+  <div class="bg-white shadow-2xl rounded-lg w-96 p-6 border border-green-600 ">
+    <h1 class="text-3xl font-extrabold text-center text-green-700 mb-4">صلوات شمار</h1>
+    <p class="text-center text-gray-600 font-medium mb-6">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَآلِ مُحَمَّدٍ</p>
+
+    <div class="text-center mb-6">
+      <p class="text-5xl font-extrabold text-green-700" id="counter">0</p>
+      <p class="text-gray-500 mt-2">تعداد صلوات‌های فرستاده‌شده</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <button 
+        onclick="incrementCounter()"
+        class="bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 shadow-lg">
+        صلوات بفرست
+      </button>
+      <button 
+        onclick="resetCounter()"
+        class="bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 shadow-lg">
+        بازنشانی
+      </button>
+    </div>
+
+    <div class="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg text-center text-gray-600 shadow" onclick="showRandomSurah()">
+      <p id="text" class="cursor-pointer">« إِنَّ اللَّهَ وَمَلَائِکَتَهُ یُصَلُّونَ عَلَی النَّبِیِّ ۚ یَا أَیُّهَا الَّذِینَ آمَنُوا صَلُّوا عَلَیْهِ وَسَلِّمُوا تَسْلِیمًا »</p>
+      <p class="mt-4 cursor-pointer font-bold text-green-700" id="detail">سوره احزاب، آیه ۵۶</p>
+    </div>
+
+    
+  </div>
+  <div class="absolute-button">
+    <button onclick="changeBackground()" class="bg-white text-green-800 py-2 px-4 font-bold rounded-lg hover:bg-green-800 hover:text-white duration-300 shadow-lg">
+      تغییر عکس زمینه
+    </button>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
